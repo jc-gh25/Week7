@@ -1,0 +1,45 @@
+Week 7 Research
+
+1. What is a database?  What is a schema?  Compare and contrast?
+ A database is an organized collection of structured data stored electronically and designed to allow efficient storage, retrieval, and modification of data. It could be compared to a highly organized filing cabinet.
+ A schema is the structure imposed on that data, defining the type of data stored and relationships between data elements. It’s like the blueprint for the filing cabinet, specifying what each folder contains and how the folders relate to each other.
+ A database is the actual data storage, while the schema is the design of that storage. The schema dictates how data is organized in the database, ensuring consistency and efficiency. You can have multiple databases each with its own schema.
+ 
+2. What is a DBMS?  What is an RDBMS?  Compare and contrast.
+ Database Management System: A software application that interacts with end-users, other applications, and the database itself to capture and analyze data. It manages how data is stored, retrieved, and modified.
+ Relational Database Management System: A type of DBMS that uses relational structures, where data is organized into tables with rows and columns. Relationships between tables are established using keys. Examples include MySQL, PostgreSQL, Oracle, Microsoft SQL Server.
+ All RDBMS are DBMS, but not all DBMS are RDBMS. RDBMS enforce data integrity through constraints and relationships, which hierarchical or network DBMS might not. RDBMS use SQL as their standard query language, making them more flexible and user-friendly.
+
+3. What is SQL?  How is it used?
+ Structured Query Language: A standard programming language used for managing and manipulating data stored in relational database management systems.
+ Data Retrieval: Select specific data using queries.
+ Data Insertion: Add new data to tables.
+ Data Update: Modify existing data.
+ Data Deletion: Remove data from tables.
+ Database Administration: Create, modify, and delete databases and tables.
+ 
+4. Our course uses MySQL.  What is the difference between MySQL and SQL?
+ SQL is the language used to interact with databases. MySQL is a specific RDBMS that implements SQL. SQL is a programming language, and MySQL as a particular program that uses that language. 
+
+5. Describe MySQL?  What type of database management system is it?  What company owns it?  What makes it unique?
+ MySQL is an RDBMS owned by Oracle Corporation since 2010, but with a strong community-driven development base. It is open-source and cross-platform. It handles large datasets efficiently, and is supported by a vibrant community ensuring continuous development.
+
+6. How is data organized in an RDBMS? What are the constructs that allow users to easily organize and access data?
+ RDBMS uses tables with rows (records) and columns (attributes). Tables are related to each other through common attributes - a primay key in one table is a foreign key in another.
+ Primary Key: Unique identifier for each record in a table.
+ Foreign Key: Links tables by referencing a primary key in another table.
+ Relationships: Established through keys to maintain data integrity and avoid redundancy.
+ Indexes: Improve query performance by quickly locating data.
+ Views: Virtual tables based on queries, simplifying data access.
+
+7. What are ten different data types MySQL provides?
+ INT: Integer numbers (e.g., 1, -5, 100).
+ VARCHAR: Variable-length strings (e.g., “hello”, “MySQL”).
+ TEXT: Long text strings (e.g., articles, descriptions).
+ DATE: Date values (e.g., 2023-12-25).
+ DATETIME: Date and time values (e.g., 2023-12-25 10:30:00).
+ FLOAT: Floating-point numbers (e.g., 3.14, -2.5).
+ DECIMAL: Precise decimal numbers (e.g., 9.99).
+ BOOLEAN: True/False values.
+ ENUM: Enumerated list of values (e.g., ‘small’, ‘medium’, ‘large’).
+ BLOB: Binary Large Object (e.g., images, videos).
